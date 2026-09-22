@@ -1,0 +1,33 @@
+modLoader = "javafml"
+# ponytail: широкий диапазон, чтобы не гадать точную сборку NeoForge — сузить при необходимости
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "hell_yeah_stuff"
+version = "1.0.0"
+displayName = "Hell Yeah Stuff"
+description = '''
+Mini crossbow with darts (regular, explosive, grapple) and rifles (iron / amethyst).
+Dying Light 2 style grappling hook.
+'''
+authors = "you"
+
+[[dependencies.hell_yeah_stuff]]
+modId = "neoforge"
+type = "required"
+versionRange = "[20.5,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.hell_yeah_stuff]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+# Конфиг миксинов (поворот руки с тросом в PlayerModel).
+# NeoForge использует официальные маппинги в рантайме — refmap не нужен.
+[[mixins]]
+config = "hell_yeah_stuff.mixins.json"

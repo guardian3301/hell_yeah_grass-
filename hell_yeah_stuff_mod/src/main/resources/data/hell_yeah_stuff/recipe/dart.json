@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " N",
+    "DS",
+    " F"
+  ],
+  "key": {
+    "N": { "item": "minecraft:netherite_scrap" },
+    "S": { "item": "minecraft:stick" },
+    "F": { "item": "minecraft:feather" },
+    "D": { "item": "minecraft:lime_dye" }
+  },
+  "result": {
+    "id": "hell_yeah_stuff:dart",
+    "count": 6
+  }
+}

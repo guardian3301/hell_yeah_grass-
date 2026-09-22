@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.hell_yeah_stuff.treacherous_hand.desc"
+  },
+  "supported_items": "#hell_yeah_stuff:daggers",
+  "weight": 5,
+  "max_level": 2,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {}
+}

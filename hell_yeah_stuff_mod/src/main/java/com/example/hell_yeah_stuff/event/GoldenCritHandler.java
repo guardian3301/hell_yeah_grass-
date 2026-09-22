@@ -1,0 +1,1 @@
+// DELETED - golden crit replaced by Midas Touch enchantment per user request

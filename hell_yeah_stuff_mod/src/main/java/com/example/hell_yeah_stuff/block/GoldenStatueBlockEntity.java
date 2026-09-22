@@ -1,0 +1,1 @@
+// DELETED - golden statue entity removed per user request

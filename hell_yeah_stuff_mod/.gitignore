@@ -1,0 +1,16 @@
+# Gradle
+.gradle/
+build/
+out/
+bin/
+
+# NeoForge dev runtime (regenerated on runClient/runServer)
+run/
+runs/
+
+# Eclipse / IDE artifacts
+*.launch
+.settings/
+.metadata/
+.classpath
+.project

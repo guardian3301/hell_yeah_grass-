@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    { "item": "hell_yeah_stuff:dart" },
+    { "item": "minecraft:redstone" },
+    { "item": "minecraft:tripwire_hook" },
+    { "item": "minecraft:gunpowder" }
+  ],
+  "result": {
+    "id": "hell_yeah_stuff:explosive_dart",
+    "count": 1
+  }
+}

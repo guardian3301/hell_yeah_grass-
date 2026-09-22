@@ -1,0 +1,1 @@
+// DELETED - golden statue removed per user request

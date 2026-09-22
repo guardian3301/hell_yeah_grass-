@@ -1,0 +1,21 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.hell_yeah_stuff.amethyst_grenades"
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "supported_items": "hell_yeah_stuff:multi_crossbow",
+  "weight": 2
+}

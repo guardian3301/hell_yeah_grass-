@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    { "item": "hell_yeah_stuff:dart" },
+    { "item": "minecraft:leather" },
+    { "item": "minecraft:string" },
+    { "item": "minecraft:string" }
+  ],
+  "result": {
+    "id": "hell_yeah_stuff:grapple_dart",
+    "count": 1
+  }
+}

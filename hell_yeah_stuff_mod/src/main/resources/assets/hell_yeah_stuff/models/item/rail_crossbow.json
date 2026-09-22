@@ -1,0 +1,136 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hell_yeah_stuff:item/rail_crossbow_standby"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        -90,
+        0,
+        -60
+      ],
+      "translation": [
+        2,
+        0.1,
+        -3
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        -90,
+        0,
+        30
+      ],
+      "translation": [
+        2,
+        0.1,
+        -3
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -90,
+        0,
+        -55
+      ],
+      "translation": [
+        1.13,
+        3.2,
+        1.13
+      ],
+      "scale": [
+        0.68,
+        0.68,
+        0.68
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -90,
+        0,
+        35
+      ],
+      "translation": [
+        1.13,
+        3.2,
+        1.13
+      ],
+      "scale": [
+        0.68,
+        0.68,
+        0.68
+      ]
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pulling": 1
+      },
+      "model": "hell_yeah_stuff:item/rail_crossbow_reloading_0"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.3
+      },
+      "model": "hell_yeah_stuff:item/rail_crossbow_reloading_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.6
+      },
+      "model": "hell_yeah_stuff:item/rail_crossbow_reloading_2"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.9
+      },
+      "model": "hell_yeah_stuff:item/rail_crossbow_reloading_3"
+    },
+    {
+      "predicate": {
+        "charged": 1
+      },
+      "model": "hell_yeah_stuff:item/rail_crossbow_iron_bolt"
+    },
+    {
+      "predicate": {
+        "charged": 1,
+        "hell_yeah_stuff:amethyst": 1
+      },
+      "model": "hell_yeah_stuff:item/rail_crossbow_amethyst_bolt"
+    },
+    {
+      "predicate": {
+        "hell_yeah_stuff:regen": 0.001
+      },
+      "model": "hell_yeah_stuff:item/rail_crossbow_regenerating_1"
+    },
+    {
+      "predicate": {
+        "hell_yeah_stuff:regen": 0.34
+      },
+      "model": "hell_yeah_stuff:item/rail_crossbow_regenerating_2"
+    },
+    {
+      "predicate": {
+        "hell_yeah_stuff:regen": 0.67
+      },
+      "model": "hell_yeah_stuff:item/rail_crossbow_regenerating_3"
+    }
+  ]
+}

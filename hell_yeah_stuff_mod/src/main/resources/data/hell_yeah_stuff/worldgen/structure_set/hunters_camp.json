@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "hell_yeah_stuff:hunters_camp",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 28,
+    "separation": 12,
+    "salt": 1815326712
+  }
+}
