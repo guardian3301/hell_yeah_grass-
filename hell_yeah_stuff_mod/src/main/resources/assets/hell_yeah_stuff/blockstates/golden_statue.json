@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "lifetime=0": { "model": "hell_yeah_stuff:block/golden_statue" },
-    "lifetime=1": { "model": "hell_yeah_stuff:block/golden_statue" },
-    "lifetime=600": { "model": "hell_yeah_stuff:block/golden_statue" },
-    "lifetime=1200": { "model": "hell_yeah_stuff:block/golden_statue" }
-  }
-}

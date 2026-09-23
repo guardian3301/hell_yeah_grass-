@@ -1,7 +1,5 @@
 package com.example.hell_yeah_stuff.client;
 
-import com.example.hell_yeah_stuff.client.StealthCloakClientExtensions;
-import com.example.hell_yeah_stuff.client.model.CowlArmorModel;
 import com.example.hell_yeah_stuff.HellYeahStuffMod;
 import com.example.hell_yeah_stuff.item.RailCrossbowItem;
 import com.example.hell_yeah_stuff.registry.ModEnchantments;
@@ -180,12 +178,6 @@ public final class ClientSetup {
     }
 
     @SubscribeEvent
-    static void onRegisterLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-        // Регистрируем слой модели накидки (cowl) для брони
-        event.registerLayerDefinition(CowlArmorModel.LAYER, CowlArmorModel::createBodyLayer);
-    }
-
-    @SubscribeEvent
     static void onRegisterParticleProviders(RegisterParticleProvidersEvent event) {
         // След рывка зачарования «Рывок» на поножах (particle/dash_trail).
         event.registerSpriteSet(ModParticles.DASH_TRAIL.get(),
@@ -206,7 +198,6 @@ public final class ClientSetup {
         // >>> NEW: рельсовый арбалет — позы ванильного арбалета.
         event.registerItem(new RailCrossbowClientExtensions(), ModItems.RAIL_CROSSBOW.get());
         // Скрытная накидка
-        event.registerItem(new StealthCloakClientExtensions(), ModItems.STEALTH_CLOAK.get());
     }
 
     private ClientSetup() {}

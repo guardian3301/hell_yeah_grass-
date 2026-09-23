@@ -2,14 +2,12 @@ package com.example.hell_yeah_stuff.registry;
 
 import com.example.hell_yeah_stuff.HellYeahStuffMod;
 import com.example.hell_yeah_stuff.item.AmethystBoltItem;
-import com.example.hell_yeah_stuff.item.DaggerItem;
 import com.example.hell_yeah_stuff.item.DartItem;
 import com.example.hell_yeah_stuff.item.ExplosiveDartItem;
 import com.example.hell_yeah_stuff.item.GrappleDartItem;
 import com.example.hell_yeah_stuff.item.IronBoltItem;
 import com.example.hell_yeah_stuff.item.MultiCrossbowItem;
 import com.example.hell_yeah_stuff.item.RailCrossbowItem;
-import com.example.hell_yeah_stuff.item.StealthCloakItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Tiers;

@@ -11,38 +11,31 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.ItemEnchantments;
 
-/**
- * Ключи data-driven зачарований мода (сами определения — в JSON:
- * data/hell_yeah_stuff/enchantment/*.json) и утилиты для их чтения со стека.
- */
+/** Ключи оставшихся data-driven зачарований и утилиты чтения их уровней. */
 public final class ModEnchantments {
 
-    /**
-     * «Аметистовые гранаты» — мульти-арбалет стреляет аметистовым боезапасом
-     * как контактной гранатой (взрыв при ударе) вместо дробового веера.
-     */
-    public static final ResourceKey<Enchantment> AMETHYST_GRENADES = ResourceKey.create(
-            Registries.ENCHANTMENT,
-            ResourceLocation.fromNamespaceAndPath(HellYeahStuffMod.MODID, "amethyst_grenades"));
+    public static final ResourceKey<Enchantment> AMETHYST_GRENADES = key("amethyst_grenades");
+    public static final ResourceKey<Enchantment> DASH = key("dash");
+    public static final ResourceKey<Enchantment> AMETHYST_CONDENSER = key("amethyst_condenser");
 
-    /**
-     * «Рывок» — базовое зачарование поножей: по клавише (по умолчанию G)
-     * игрок делает рывок в направлении взгляда, а из центра хитбокса
-     * (торса) полсекунды идут частицы dash_trail. См. DashTrailHandler.
-     */
-    public static final ResourceKey<Enchantment> DASH = ResourceKey.create(
-            Registries.ENCHANTMENT,
-            ResourceLocation.fromNamespaceAndPath(HellYeahStuffMod.MODID, "dash"));
+    public static int level(ItemStack stack, Holder<Enchantment> enchantment) {
+        return EnchantmentHelper.getEnchantmentsForCrafting(stack).getLevel(enchantment);
+    }
 
-    /**
-     * «Аметистовый конденсатор» для рельсового арбалета (I–III):
-     * позволяет натягивать арбалет без болтов в инвентаре — за 15/10/5 секунд
-     * в нём синтезируется аметистовый болт. См. RailCrossbowItem.
-     */
-    public static final ResourceKey<Enchantment> AMETHYST_CONDENSER = ResourceKey.create(
-            Registries.ENCHANTMENT,
-            ResourceLocation.fromNamespaceAndPath(HellYeahStuffMod.MODID, "amethyst_condenser"));
+    public static int level(ItemStack stack, ResourceKey<Enchantment> key) {
+        ItemEnchantments enchantments = EnchantmentHelper.getEnchantmentsForCrafting(stack);
+        for (Object2IntMap.Entry<Holder<Enchantment>> entry : enchantments.entrySet()) {
+            if (entry.getKey().is(key)) {
+                return entry.getIntValue();
+            }
+        }
+        return 0;
+    }
 
+    private static ResourceKey<Enchantment> key(String path) {
+        return ResourceKey.create(Registries.ENCHANTMENT,
+                ResourceLocation.fromNamespaceAndPath(HellYeahStuffMod.MODID, path));
+    }
 
     private ModEnchantments() {}
 }

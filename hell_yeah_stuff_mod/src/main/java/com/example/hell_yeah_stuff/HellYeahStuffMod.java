@@ -19,18 +19,15 @@ public class HellYeahStuffMod {
     public static final String MODID = "hell_yeah_stuff";
 
     public HellYeahStuffMod(IEventBus modEventBus, ModContainer modContainer) {
-        ModBlocks.BLOCKS.register(modEventBus); // >>> NEW: острая аметистовая пыль
+        ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModEntities.ENTITY_TYPES.register(modEventBus);
-        // ModCreativeTabs регистрируется сам через @EventBusSubscriber —
-        // он добавляет предметы в ванильную вкладку Combat, отдельного
-        // DeferredRegister у него нет.
-        ModSounds.SOUND_EVENTS.register(modEventBus); // >>> NEW: кастомные звуки
-        ModFeatures.FEATURES.register(modEventBus); // ель с платформой (worldgen)
-        ModParticles.PARTICLE_TYPES.register(modEventBus); // взмах аметистовой сабли
-        ModMobEffects.MOB_EFFECTS.register(modEventBus); // «Взрывоопасность» от взрывного дротика
-        ModEnchantmentEffects.ENCHANTMENT_ENTITY_EFFECTS.register(modEventBus); // зачарование «Забвение»
-        ModDataComponents.DATA_COMPONENTS.register(modEventBus); // варианты кортиков
-        ModBlockEntities.BLOCK_ENTITIES.register(modEventBus); // пустой реестр (block entities удалены)
+        ModSounds.SOUND_EVENTS.register(modEventBus);
+        ModFeatures.FEATURES.register(modEventBus);
+        ModParticles.PARTICLE_TYPES.register(modEventBus);
+        ModMobEffects.MOB_EFFECTS.register(modEventBus);
+        ModEnchantmentEffects.ENCHANTMENT_ENTITY_EFFECTS.register(modEventBus);
+        ModDataComponents.DATA_COMPONENTS.register(modEventBus);
+        ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
     }
 }
