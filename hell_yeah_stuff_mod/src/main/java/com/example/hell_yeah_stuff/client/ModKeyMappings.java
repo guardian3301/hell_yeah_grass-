@@ -33,8 +33,11 @@ public final class ModKeyMappings {
     private static final double DASH_STRENGTH = 1.1D;
     private static final double DASH_UP = 0.18D;
 
-    /** Тик последнего рывка (player.tickCount) для клиентского кулдауна. */
-    private static int lastDashTick = -1000;
+    /** Тик последнего рывка (monotonic gameTime уровня) для клиентского кулдауна.
+     *  Фикс бага #1: player.tickCount сбрасывается в 0 после смерти/смены измерения,
+     *  из-за чего старый lastDashTick оставался большим и рывок блокировался на ~250 сек.
+     *  Используем level.getGameTime() — он не сбрасывается и совпадает с серверной проверкой. */
+    private static long lastDashGameTime = -1000L;
 
     @EventBusSubscriber(modid = HellYeahStuffMod.MODID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
     public static final class Registration {
@@ -65,10 +68,11 @@ public final class ModKeyMappings {
         if (ModEnchantments.level(player.getItemBySlot(EquipmentSlot.LEGS), ModEnchantments.DASH) <= 0) {
             return;
         }
-        if (player.tickCount - lastDashTick < DashTrailHandler.DASH_COOLDOWN_TICKS) {
+        long now = player.level().getGameTime();
+        if (now - lastDashGameTime < DashTrailHandler.DASH_COOLDOWN_TICKS) {
             return;
         }
-        lastDashTick = player.tickCount;
+        lastDashGameTime = now;
 
         // Горизонтальный рывок в направлении взгляда + небольшой подъём.
         Vec3 look = player.getLookAngle();
