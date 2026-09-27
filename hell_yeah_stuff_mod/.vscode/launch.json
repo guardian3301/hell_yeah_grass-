@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - hell_yeah_stuff",
+        "order": 0
+      },
+      "projectName": "hell_yeah_stuff",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\Vladimir\\OneDrive\\Рабочий стол\\project\\hell_yeah_grass--main\\hell_yeah_stuff_mod\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\Vladimir\\OneDrive\\Рабочий стол\\project\\hell_yeah_grass--main\\hell_yeah_stuff_mod\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dhell_yeah_stuff%%C:\\Users\\Vladimir\\OneDrive\\Рабочий стол\\project\\hell_yeah_grass--main\\hell_yeah_stuff_mod\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - hell_yeah_stuff",
+        "order": 1
+      },
+      "projectName": "hell_yeah_stuff",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\Vladimir\\OneDrive\\Рабочий стол\\project\\hell_yeah_grass--main\\hell_yeah_stuff_mod\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\Vladimir\\OneDrive\\Рабочий стол\\project\\hell_yeah_grass--main\\hell_yeah_stuff_mod\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dhell_yeah_stuff%%C:\\Users\\Vladimir\\OneDrive\\Рабочий стол\\project\\hell_yeah_grass--main\\hell_yeah_stuff_mod\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}

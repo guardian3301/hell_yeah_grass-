@@ -1,0 +1,19 @@
+{
+  // Gradle 8.13 НЕ поддерживает JDK 25 -> фиксируем JDK 21 для VS Code + Red Hat Java
+  "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-21.0.11",
+  "java.import.gradle.java.home": "C:\\Program Files\\Java\\jdk-21.0.11",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-21",
+      "path": "C:\\Program Files\\Java\\jdk-21.0.11",
+      "default": true
+    },
+    {
+      "name": "JavaSE-25",
+      "path": "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.4.101-hotspot"
+    }
+  ],
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.import.gradle.wrapper.enabled": true,
+  "java.errors.incompleteClasspath.severity": "warning"
+}

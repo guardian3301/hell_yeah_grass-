@@ -1,0 +1,22 @@
+{
+  // Фиксируем JDK 21 для VS Code + Gradle — иначе Gradle 8.13 на JDK 25 падает (Type T not present, 1000+ красных ошибок)
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-21.0.11",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-21",
+      "path": "C:\\Program Files\\Java\\jdk-21.0.11",
+      "default": true
+    },
+    {
+      "name": "JavaSE-25",
+      "path": "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.4.101-hotspot"
+    }
+  ],
+  "java.import.gradle.java.home": "C:\\Program Files\\Java\\jdk-21.0.11",
+  "java.import.gradle.wrapper.enabled": true,
+  "java.import.gradle.version": "8.13",
+  "java.format.settings.url": "",
+  "java.errors.incompleteClasspath.severity": "warning"
+}
