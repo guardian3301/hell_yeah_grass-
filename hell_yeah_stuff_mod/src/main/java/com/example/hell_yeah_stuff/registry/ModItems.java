@@ -10,7 +10,7 @@ import com.example.hell_yeah_stuff.item.MultiCrossbowItem;
 import com.example.hell_yeah_stuff.item.RailCrossbowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Tiers;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -23,7 +23,6 @@ public final class ModItems {
 
     /**
      * Рельсовый арбалет. Прочность как у ванильного арбалета (465).
-     * Раньше тут был дублирующий id "multi_crossbow" — краш на регистрации.
      */
     public static final DeferredItem<Item> RAIL_CROSSBOW = ITEMS.register("rail_crossbow",
             () -> new RailCrossbowItem(new Item.Properties().stacksTo(1).durability(465)));
@@ -46,19 +45,18 @@ public final class ModItems {
     /**
      * Аметистовый болт — синтезируется только зачарованием «Аметистовый
      * конденсатор» и живёт только внутри компонента заряженных снарядов.
-     * В креативные вкладки НЕ добавляется.
      */
     public static final DeferredItem<Item> AMETHYST_BOLT = ITEMS.register("amethyst_bolt",
             () -> new AmethystBoltItem(new Item.Properties().rarity(Rarity.RARE)));
 
-    // Блочный магазин — аксессуар мульти-арбалета. Редкость RARE (аква),
-    // не стакается.
+    // Блочный магазин — аксессуар мульти-арбалета. Редкость RARE (аква), не стакается.
     public static final DeferredItem<Item> BLOCK_MAGAZINE = ITEMS.register("block_magazine",
             () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
-    // Усиленная верёвка — аксессуар на ремень (Curios): трос крюка-кошки
-    // окрашивается в зелёный, а максимальная длина зацепа удваивается.
+    public static final DeferredItem<Item> GEODE_SKELETON_SPAWN_EGG = ITEMS.register("geode_skeleton_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.GEODE_SKELETON, 0xC8A2FF, 0x5A3D8A, new Item.Properties()));
+
+    // Усиленная верёвка — аксессуар на ремень (Curios): трос крюка-кошки окрашивается в зелёный.
     public static final DeferredItem<Item> REINFORCED_ROPE = ITEMS.register("reinforced_rope",
             () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
-
 }

@@ -24,5 +24,7 @@
   "entity.hell_yeah_stuff.amethyst_bolt": "Аметистовый болт",
   "block.hell_yeah_stuff.sharp_amethyst_dust": "Острая аметистовая пыль",
   "enchantment.hell_yeah_stuff.amethyst_condenser": "Аметистовый конденсатор",
-  "subtitles.hell_yeah_stuff.bolt_whistle": "Свист болта"
+  "subtitles.hell_yeah_stuff.bolt_whistle": "Свист болта",
+  "entity.hell_yeah_stuff.geode_skeleton": "Жеодный скелет",
+  "item.hell_yeah_stuff.geode_skeleton_spawn_egg": "Яйцо жеодного скелета"
 }

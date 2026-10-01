@@ -175,6 +175,7 @@ public final class ClientSetup {
         // >>> NEW: болты рельсового арбалета.
         event.registerEntityRenderer(ModEntities.IRON_BOLT.get(), IronBoltRenderer::new);
         event.registerEntityRenderer(ModEntities.AMETHYST_BOLT.get(), AmethystBoltRenderer::new);
+        event.registerEntityRenderer(ModEntities.GEODE_SKELETON.get(), GeodeSkeletonRenderer::new);
     }
 
     @SubscribeEvent
@@ -202,3 +203,4 @@ public final class ClientSetup {
 
     private ClientSetup() {}
 }
+

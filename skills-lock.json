@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "skills": {
+    "asset-pipeline": {
+      "source": "rehan-remade/universal-modder",
+      "sourceType": "github",
+      "skillPath": "skills/asset-pipeline/SKILL.md",
+      "computedHash": "4f5550c27bc9428f6ec28c4f47673474ccdced5c749845dee8b02928d491a723"
+    },
+    "fal-assets": {
+      "source": "rehan-remade/universal-modder",
+      "sourceType": "github",
+      "skillPath": "skills/fal-assets/SKILL.md",
+      "computedHash": "e2bd9d1531ef4262f6f19f0f2e96369dacd3aedda7309812c0e0a44c6e7a5c1f"
+    },
+    "game-automation": {
+      "source": "rehan-remade/universal-modder",
+      "sourceType": "github",
+      "skillPath": "skills/game-automation/SKILL.md",
+      "computedHash": "7dc8826611446d982a63642da6ea0f969deb72baea7b5bc1dcc985f7dd8fe265"
+    },
+    "game-recon": {
+      "source": "rehan-remade/universal-modder",
+      "sourceType": "github",
+      "skillPath": "skills/game-recon/SKILL.md",
+      "computedHash": "dc88d85adb17aae10875ef29364fe42283382e3b97cfe84083dd3683271ba7b2"
+    },
+    "mashup-mods": {
+      "source": "rehan-remade/universal-modder",
+      "sourceType": "github",
+      "skillPath": "skills/mashup-mods/SKILL.md",
+      "computedHash": "7c665cd9c948faa328206b9b2df16a824442b839c45b78520ea9b2f4bf3b6afa"
+    },
+    "mod-any-game": {
+      "source": "rehan-remade/universal-modder",
+      "sourceType": "github",
+      "skillPath": "skills/mod-any-game/SKILL.md",
+      "computedHash": "d060014105534d38bfebd48511401bbe3a92803e3989e528810fffb5df622871"
+    },
+    "publish-mod": {
+      "source": "rehan-remade/universal-modder",
+      "sourceType": "github",
+      "skillPath": "skills/publish-mod/SKILL.md",
+      "computedHash": "2b3fb4093b75ef866ef4e4a1082f8baaa1c3db2e6ab7560b0655041fbbd82464"
+    },
+    "reverse-engineering": {
+      "source": "rehan-remade/universal-modder",
+      "sourceType": "github",
+      "skillPath": "skills/reverse-engineering/SKILL.md",
+      "computedHash": "551c45fff707f397ac6bc5c573be741d229b6a4050bcebe6c913f45ce2c29f85"
+    },
+    "share-field-notes": {
+      "source": "rehan-remade/universal-modder",
+      "sourceType": "github",
+      "skillPath": "skills/share-field-notes/SKILL.md",
+      "computedHash": "72697a20d9c90e1929e59be6efc2ec66084e20b187da391bb6f98e0b00fd4094"
+    },
+    "showcase-video": {
+      "source": "rehan-remade/universal-modder",
+      "sourceType": "github",
+      "skillPath": "skills/showcase-video/SKILL.md",
+      "computedHash": "c60671afa582ad5d74f7717b75819228f4fbdc6ad0773446caf89e70e51f0d44"
+    }
+  }
+}

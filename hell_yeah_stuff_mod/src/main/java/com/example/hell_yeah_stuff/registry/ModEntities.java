@@ -6,6 +6,7 @@ import com.example.hell_yeah_stuff.entity.AmethystGrenadeEntity;
 import com.example.hell_yeah_stuff.entity.AmethystShardEntity;
 import com.example.hell_yeah_stuff.entity.DartEntity;
 import com.example.hell_yeah_stuff.entity.ExplosiveDartEntity;
+import com.example.hell_yeah_stuff.entity.GeodeSkeletonEntity;
 import com.example.hell_yeah_stuff.entity.GrappleDartEntity;
 import com.example.hell_yeah_stuff.entity.IronBoltEntity;
 import net.minecraft.core.registries.Registries;
@@ -43,7 +44,6 @@ public final class ModEntities {
                             .updateInterval(20)
                             .build("grapple_dart"));
 
-    // >>> NEW: аметистовые снаряды — осколок (дробина) и контактная граната
     public static final DeferredHolder<EntityType<?>, EntityType<AmethystShardEntity>> AMETHYST_SHARD =
             ENTITY_TYPES.register("amethyst_shard",
                     () -> EntityType.Builder.<AmethystShardEntity>of(AmethystShardEntity::new, MobCategory.MISC)
@@ -59,11 +59,7 @@ public final class ModEntities {
                             .clientTrackingRange(4)
                             .updateInterval(20)
                             .build("amethyst_grenade"));
-    // <<< NEW
 
-    // >>> NEW: болты рельсового арбалета. Параметры трекинга 1:1
-    // с ванильной стрелой (4 / 20) — плавный полёт без дёрганья
-    // и без лишних пакетов коррекции позиции.
     public static final DeferredHolder<EntityType<?>, EntityType<IronBoltEntity>> IRON_BOLT =
             ENTITY_TYPES.register("iron_bolt",
                     () -> EntityType.Builder.<IronBoltEntity>of(IronBoltEntity::new, MobCategory.MISC)
@@ -79,7 +75,15 @@ public final class ModEntities {
                             .clientTrackingRange(4)
                             .updateInterval(20)
                             .build("amethyst_bolt"));
-    // <<< NEW
+
+    public static final DeferredHolder<EntityType<?>, EntityType<GeodeSkeletonEntity>> GEODE_SKELETON =
+            ENTITY_TYPES.register("geode_skeleton",
+                    () -> EntityType.Builder.<GeodeSkeletonEntity>of(GeodeSkeletonEntity::new, MobCategory.MONSTER)
+                            .sized(0.6F, 1.99F)
+                            .eyeHeight(1.74F)
+                            .clientTrackingRange(8)
+                            .updateInterval(3)
+                            .build("geode_skeleton"));
 
     private ModEntities() {}
 }

@@ -24,5 +24,7 @@
   "entity.hell_yeah_stuff.amethyst_bolt": "Amethyst Bolt",
   "block.hell_yeah_stuff.sharp_amethyst_dust": "Sharp Amethyst Dust",
   "enchantment.hell_yeah_stuff.amethyst_condenser": "Amethyst Condenser",
-  "subtitles.hell_yeah_stuff.bolt_whistle": "Bolt Whistle"
+  "subtitles.hell_yeah_stuff.bolt_whistle": "Bolt Whistle",
+  "entity.hell_yeah_stuff.geode_skeleton": "Geode Skeleton",
+  "item.hell_yeah_stuff.geode_skeleton_spawn_egg": "Geode Skeleton Spawn Egg"
 }
