@@ -26,3 +26,17 @@ node_modules/
 Thumbs.db
 
 desktop.ini
+
+# ---- Ponytail skills (local) ----
+.agents/skills/ponytail-audit/
+.agents/skills/ponytail-debt/
+.agents/skills/ponytail-gain/
+.agents/skills/ponytail-help/
+.agents/skills/ponytail-review/
+.agents/skills/ponytail/
+.claude/skills/ponytail-audit/
+.claude/skills/ponytail-debt/
+.claude/skills/ponytail-gain/
+.claude/skills/ponytail-help/
+.claude/skills/ponytail-review/
+.claude/skills/ponytail/
