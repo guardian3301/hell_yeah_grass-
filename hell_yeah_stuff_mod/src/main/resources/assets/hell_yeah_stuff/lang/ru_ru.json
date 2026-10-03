@@ -26,5 +26,8 @@
   "enchantment.hell_yeah_stuff.amethyst_condenser": "Аметистовый конденсатор",
   "subtitles.hell_yeah_stuff.bolt_whistle": "Свист болта",
   "entity.hell_yeah_stuff.geode_skeleton": "Жеодный скелет",
-  "item.hell_yeah_stuff.geode_skeleton_spawn_egg": "Яйцо жеодного скелета"
+  "item.hell_yeah_stuff.geode_skeleton_spawn_egg": "Яйцо жеодного скелета",
+  "item.hell_yeah_stuff.belt": "Ремень",
+  "key.hell_yeah_stuff.belt_swap": "Сменить с оружием за спиной (Ремень)",
+  "key.hell_yeah_stuff.belt_use": "Использовать предмет за спиной (Ремень)"
 }

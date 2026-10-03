@@ -2,6 +2,7 @@ package com.example.hell_yeah_stuff.registry;
 
 import com.example.hell_yeah_stuff.HellYeahStuffMod;
 import com.example.hell_yeah_stuff.item.AmethystBoltItem;
+import com.example.hell_yeah_stuff.item.BeltItem;
 import com.example.hell_yeah_stuff.item.DartItem;
 import com.example.hell_yeah_stuff.item.ExplosiveDartItem;
 import com.example.hell_yeah_stuff.item.GrappleDartItem;
@@ -59,4 +60,8 @@ public final class ModItems {
     // Усиленная верёвка — аксессуар на ремень (Curios): трос крюка-кошки окрашивается в зелёный.
     public static final DeferredItem<Item> REINFORCED_ROPE = ITEMS.register("reinforced_rope",
             () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
+
+    /** Ремень — броня нагрудника, даёт слот за спиной. */
+    public static final DeferredItem<Item> BELT = ITEMS.register("belt",
+            () -> new BeltItem(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON)));
 }

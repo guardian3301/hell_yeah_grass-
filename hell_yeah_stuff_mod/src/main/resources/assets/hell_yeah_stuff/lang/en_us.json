@@ -26,5 +26,8 @@
   "enchantment.hell_yeah_stuff.amethyst_condenser": "Amethyst Condenser",
   "subtitles.hell_yeah_stuff.bolt_whistle": "Bolt Whistle",
   "entity.hell_yeah_stuff.geode_skeleton": "Geode Skeleton",
-  "item.hell_yeah_stuff.geode_skeleton_spawn_egg": "Geode Skeleton Spawn Egg"
+  "item.hell_yeah_stuff.geode_skeleton_spawn_egg": "Geode Skeleton Spawn Egg",
+  "item.hell_yeah_stuff.belt": "Belt",
+  "key.hell_yeah_stuff.belt_swap": "Swap with Back Slot (Belt)",
+  "key.hell_yeah_stuff.belt_use": "Use Back Item (Belt)"
 }

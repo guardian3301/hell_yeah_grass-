@@ -1,7 +1,9 @@
 package com.example.hell_yeah_stuff;
 
+import com.example.hell_yeah_stuff.config.BeltConfig;
 import com.example.hell_yeah_stuff.registry.ModBlockEntities;
 import com.example.hell_yeah_stuff.registry.ModBlocks;
+import com.example.hell_yeah_stuff.registry.ModDataAttachments;
 import com.example.hell_yeah_stuff.registry.ModDataComponents;
 import com.example.hell_yeah_stuff.registry.ModEnchantmentEffects;
 import com.example.hell_yeah_stuff.registry.ModEntities;
@@ -13,12 +15,14 @@ import com.example.hell_yeah_stuff.registry.ModSounds;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 
 @Mod(HellYeahStuffMod.MODID)
 public class HellYeahStuffMod {
     public static final String MODID = "hell_yeah_stuff";
 
     public HellYeahStuffMod(IEventBus modEventBus, ModContainer modContainer) {
+        modContainer.registerConfig(ModConfig.Type.COMMON, BeltConfig.SPEC);
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModEntities.ENTITY_TYPES.register(modEventBus);
@@ -28,6 +32,7 @@ public class HellYeahStuffMod {
         ModMobEffects.MOB_EFFECTS.register(modEventBus);
         ModEnchantmentEffects.ENCHANTMENT_ENTITY_EFFECTS.register(modEventBus);
         ModDataComponents.DATA_COMPONENTS.register(modEventBus);
+        ModDataAttachments.ATTACHMENT_TYPES.register(modEventBus);
         ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
     }
 }
